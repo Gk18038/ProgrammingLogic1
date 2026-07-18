@@ -19,10 +19,15 @@ class Program
         bool haveUmbrella = false;
         if (isRaining)
         {
-            Console.WriteLine("Take and Umbrella!");
+            if (!haveUmbrella)
+            {
+                Console.WriteLine("Take and Umbrella!");
+            }
         }
         else
-        Console.WriteLine("You're good to go!");
+        {
+            Console.WriteLine("You're good to go!");
+        }
         // Step 3
         int age = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("What is your age?");
